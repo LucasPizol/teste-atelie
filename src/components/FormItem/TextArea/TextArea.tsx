@@ -1,17 +1,10 @@
 import { CommonInputProps } from "@/interfaces/CommonInput";
 import { FieldModel } from "@/interfaces/Form";
 
-export const Checkbox = ({
-  checked,
+export const TextArea = ({
   id,
+  value,
   onChange,
 }: FieldModel & CommonInputProps) => {
-  return (
-    <input
-      type="checkbox"
-      checked={checked}
-      id={String(id)}
-      onChange={onChange}
-    />
-  );
+  return <textarea onChange={onChange} id={String(id)} value={value} />;
 };
