@@ -1,6 +1,6 @@
 import { Layout } from "@/common/Layout";
-import { Appointments } from "@/page/Appoinments";
-import { PreExam } from "@/page/PreExam";
+import { Appointments } from "@/page/Appoinments/Appoinments";
+import { PreExam } from "@/page/PreExam/PreExam";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 export const RoutesApp = () => {

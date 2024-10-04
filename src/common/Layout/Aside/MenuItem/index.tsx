@@ -1,3 +1,4 @@
+import styles from "./styles.module.css";
 interface MenuItemProps {
   icon: React.ReactNode;
   title: string;
@@ -13,14 +14,8 @@ export const MenuItem = ({
 }: MenuItemProps) => {
   return (
     <div
+      className={`${styles.menu_item} ${isSelected ? styles.selected : ""}`}
       onClick={onClick}
-      style={{
-        cursor: "pointer",
-        display: "flex",
-        gap: 11,
-        background: isSelected ? "#1F46CF" : "transparent",
-        padding: "18px 20px",
-      }}
     >
       {icon}
       <span>{title}</span>

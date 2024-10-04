@@ -1,0 +1,22 @@
+.main_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding: 40px;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main_container__section {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.main_container button {
+  align-self: flex-end;
+  background: rgb(144, 223, 144);
+}

@@ -2,7 +2,7 @@ import { CommonInputProps } from "@/interfaces/CommonInput";
 import { FieldModel } from "@/interfaces/Form";
 
 export const Radio = ({
-  form_name,
+  name,
   options,
   onChange,
 }: FieldModel & CommonInputProps) => {
@@ -28,7 +28,7 @@ export const Radio = ({
           <input
             key={option}
             type="radio"
-            name={form_name}
+            name={name}
             value={option}
             id={String(option)}
             onChange={onChange}

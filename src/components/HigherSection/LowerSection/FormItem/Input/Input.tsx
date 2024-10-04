@@ -6,7 +6,7 @@ export const InputText = ({
   value,
   type,
   name,
-  form_name,
+  onChange,
 }: FieldModel & CommonInputProps) => {
   return (
     <input
@@ -20,7 +20,8 @@ export const InputText = ({
       type={type}
       id={String(id)}
       value={value}
-      name={form_name}
+      name={name}
+      onChange={onChange}
     />
   );
 };

@@ -1,0 +1,12 @@
+.lower_section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lower_section__fields_container {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+}

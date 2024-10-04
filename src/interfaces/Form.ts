@@ -4,17 +4,17 @@ export interface FormModel {
   id: number;
   name: string;
   patient_id: number;
-  fields: HigherSectionModel[];
+  content: SectionWrapperModel[];
 }
 
-export interface HigherSectionModel {
-  section: string;
-  fields: FieldSectionModel[];
+export interface SectionWrapperModel {
+  title: string;
+  sections: SectionModel[];
 }
 
-export interface FieldSectionModel {
-  section: string;
-  fields: FieldModel[];
+export interface SectionModel {
+  sectionName: string;
+  sectionFields: FieldModel[];
 }
 
 export interface FieldModel {
@@ -24,5 +24,5 @@ export interface FieldModel {
   value: string;
   checked: boolean;
   options: string[] | null;
-  form_name: string;
+  sectionName: string;
 }

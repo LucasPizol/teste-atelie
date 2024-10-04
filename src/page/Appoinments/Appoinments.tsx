@@ -3,6 +3,7 @@ import { Button } from "@/components/Button";
 import { AppointmentModelWithAggregation } from "@/interfaces/Appointment";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import styles from "./styles.module.css";
 
 export const Appointments = () => {
   const [appoinments, setAppoinments] = useState<
@@ -21,13 +22,7 @@ export const Appointments = () => {
   }, []);
 
   return (
-    <section
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        gap: 22,
-      }}
-    >
+    <section className={styles.appointments_container}>
       <h2
         style={{
           color: "#3E3C38",
@@ -60,7 +55,7 @@ export const Appointments = () => {
                 >
                   PRÉ-EXAME
                 </Button>
-                <Button>INICIAR</Button>
+                <Button style={{ marginLeft: 4 }}>INICIAR</Button>
               </td>
             </tr>
           ))}

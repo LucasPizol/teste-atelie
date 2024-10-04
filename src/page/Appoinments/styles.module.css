@@ -1,0 +1,16 @@
+.appointments_container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  padding: 40px;
+  flex-direction: column;
+  height: 100%;
+}
+
+.appointments_container tr {
+  height: 50px !important;
+}
+
+.appointments_container thead th {
+  text-align: start;
+}
