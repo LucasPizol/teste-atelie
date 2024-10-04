@@ -33,7 +33,7 @@ export const forms = {
               sectionFields: [
                 {
                   id: 1,
-                  name: "text field eye left",
+                  name: "text field",
                   type: "text",
                   value: "TESTE",
                   checked: null,
@@ -41,7 +41,7 @@ export const forms = {
                 },
                 {
                   id: 2,
-                  name: "select field eye left",
+                  name: "select field",
                   type: "select",
                   value: "test_2",
                   checked: null,
@@ -80,7 +80,7 @@ export const forms = {
               sectionFields: [
                 {
                   id: 1,
-                  name: "text field eye left",
+                  name: "text field",
                   type: "text",
                   value: "TESTE",
                   checked: null,
@@ -88,7 +88,7 @@ export const forms = {
                 },
                 {
                   id: 2,
-                  name: "select field eye left",
+                  name: "select field",
                   type: "select",
                   value: "test_2",
                   checked: null,
